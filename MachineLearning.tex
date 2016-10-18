@@ -1,6 +1,9 @@
 \documentclass{book}
 \usepackage[backend=bibtex, style=numeric]{biblatex}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{makeidx}
+\usepackage[hidelinks]{hyperref}
+\makeindex
 \bibliography{MyCitations}
 \title{MACHINE LEARNING\\Pre-processing, Modeling, Classification and Regression}
 \author{Salman Aslam}
@@ -132,19 +135,6 @@ The output function depends on non-linear basis functions and their combinations
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic and Supervised)}
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Gaussian Processes}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 \part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic and Unsupervised)}
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -154,8 +144,27 @@ The output function depends on non-linear basis functions and their combinations
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic\index{Probabilistic} and Supervised)}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Gaussian Processes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \cite{GaussProc_SimpleIntro}
 \cite{BOOK_GMPL}
 
-\printbibliography
+
+
+\nocite{*}
+\printbibheading[title={Bibliography},heading=bibnumbered]
+\printbibliography[title={Books},type=book,heading=subbibnumbered]
+\printbibliography[title={Articles},type=article,heading=subbibnumbered]
+\printbibliography[title={Web Pages},type=misc,heading=subbibnumbered]
+\printindex
 \end{document}
