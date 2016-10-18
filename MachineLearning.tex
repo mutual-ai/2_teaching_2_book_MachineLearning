@@ -1,18 +1,110 @@
-\documentclass{article}
+\documentclass{book}
 \usepackage[backend=bibtex, style=numeric]{biblatex}
 \usepackage[dvipsnames]{xcolor}
 \bibliography{MyCitations}
-\title{Gaussian Processes}
+\title{MACHINE LEARNING\\Pre-processing, Modeling, Classification and Regression}
+\author{Salman Aslam}
+\date{}
+\setcounter{tocdepth}{2}
+
 \begin{document}
 \maketitle
 
-%###############
-\section{Introduction}
-%###############
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Preface}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%======================
-\subsection{Basis Functions}
-%======================
+dd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Mathematical Background}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{General Purpose Algorithms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{PRE-PROCESSING}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{PCA}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{MODELING, CLASSIFICATION and REGRESSION\\(Non-probabilistic and Unsupervised)}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{K-means Clustering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{MODELING, CLASSIFICATION and REGRESSION\\(Non-probabilistic and Supervised)}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Overview}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Linear Combinations of Non-Linear Basis Functions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%#####
+\section{Fixed Type, Fixed Number} 
+%#####
+\subsection{Polynomial Regression}
+
+%#####
+\section{Fixed Type, Variable Number}
+%#####
+\subsection{Kernel Methods}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Non-Linear Combinations of Non-Linear Basis Functions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Variable Type, Fixed Number} 
+%#####
+\subsection{Neural Networks}
+
 We are not interested in linear basis functions.
 The output function depends on non-linear basis functions and their combinations in the following manner:
 
@@ -33,6 +125,34 @@ The output function depends on non-linear basis functions and their combinations
 \end{enumerate}
 \end{enumerate}
 \end{enumerate}
+
+
+
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic and Supervised)}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Gaussian Processes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic and Unsupervised)}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Mixture of Gaussians}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \cite{GaussProc_SimpleIntro}
 \cite{BOOK_GMPL}
