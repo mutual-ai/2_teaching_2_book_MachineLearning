@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[backend=bibtex, style=numeric]{biblatex}
-
+\usepackage[dvipsnames]{xcolor}
 \bibliography{MyCitations}
 \title{Gaussian Processes}
 \begin{document}
@@ -9,7 +9,26 @@
 %###############
 \section{Introduction}
 %###############
+
+%======================
+\subsection{Basis Functions}
+%======================
+Basis functions and their combinations can be of the following 16 types, given in blue:
+\begin{enumerate}
+\item {\color{red}\textbf{Linear basis functions, linear combination}}: none
+\item {\color{red}\textbf{Linear basis functions, non-linear combination}}: none
+\item {\color{red}\textbf{Non-linear basis functions, linear combination}}
+\begin{enumerate}
+\item {\color{OliveGreen}\textbf{Fixed type}}
+\begin{enumerate}
+\item {\color{blue}\textbf{Fixed number}}: Ch 3 \& 4 (read pg 227): Polynomial Regression
+\end{enumerate}
+\end{enumerate}
+\item {\color{red}\textbf{Non-linear basis functions, non-linear combination}}
+\end{enumerate}
+
 \cite{GaussProc_SimpleIntro}
+\cite{BOOK_GMPL}
 
 \printbibliography
 \end{document}
