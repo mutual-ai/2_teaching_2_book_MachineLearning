@@ -5,10 +5,10 @@
 \usepackage[hidelinks]{hyperref}
 \makeindex
 \bibliography{MyCitations}
-\title{MACHINE LEARNING\\Pre-processing, Modeling, Classification and Regression}
+\title{MACHINE LEARNING\\Pre-processing, MODELING and INFERENCE}
 \author{Salman Aslam}
 \date{}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 
 \begin{document}
 \maketitle
@@ -30,6 +30,13 @@ dd
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Concepts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Loss functions}
+\section{VC Dimension}
+\section{Bayes' Rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Mathematical Background}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -45,68 +52,78 @@ dd
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{PRE-PROCESSING}
+\part{\color{red}PRE-PROCESSING}
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{PCA}
+\chapter{Dimensionality Reduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{MODELING, CLASSIFICATION and REGRESSION\\(Non-probabilistic and Unsupervised)}
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{K-means Clustering}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
+\section{PCA}
 
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{MODELING, CLASSIFICATION and REGRESSION\\(Non-probabilistic and Supervised)}
+\part{\color{red}MODELING, CLASSIFICATION and REGRESSION}
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Overview}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Linear Combinations of Non-Linear Basis Functions}
+\chapter{Unsupervised, Non-probabilistic Methods}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %#####
-\section{Fixed Type, Fixed Number} 
+\section{K-means Clustering}
 %#####
-\subsection{Polynomial Regression}
-
-%#####
-\section{Fixed Type, Variable Number}
-%#####
-\subsection{Kernel Methods}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Non-Linear Combinations of Non-Linear Basis Functions}
+\chapter{Unsupervised Probabilistic Methods}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%=========
+\subsection{Mixture of Gaussians}
+%=========
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Non-probabilistic and Supervised}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %#####
-\section{Variable Type, Fixed Number} 
+\section{Linear Basis Functions: Linear Combinations}
 %#####
-\subsection{Neural Networks}
+
+%#####
+\section{Linear Basis Functions: Non-Linear Combinations}
+%#####
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Non-Linear Basis Functions: Linear Combinations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%#####
+\subsection{Fixed Type, Fixed Number} 
+%#####
+\subsubsection{Polynomial}
+\subsubsection{Spline}
+\subsubsection{Sigmoidal}
+
+%#####
+\subsection{Fixed Type, Variable Number}
+%#####
+\subsubsection{Kernel Methods}
+
+%#####
+\section{Non-Linear Basis Functions: Non-Linear Combinations}
+%#####
+\subsection{Variable Type, Fixed Number} 
+%#####
+\subsubsection{Neural Networks}
 
 We are not interested in linear basis functions.
 The output function depends on non-linear basis functions and their combinations in the following manner:
@@ -132,30 +149,23 @@ The output function depends on non-linear basis functions and their combinations
 
 
 
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic and Unsupervised)}
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Mixture of Gaussians}
+\chapter{Probabilistic\index{Probabilistic} and Supervised}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%========
+\subsection{Gaussian Processes}
+%========
 
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{MODELING, CLASSIFICATION and REGRESSION\\(Probabilistic\index{Probabilistic} and Supervised)}
+\part{\color{red}WRAP-UP}
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Gaussian Processes}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \cite{GaussProc_SimpleIntro}
 \cite{BOOK_GMPL}
 
