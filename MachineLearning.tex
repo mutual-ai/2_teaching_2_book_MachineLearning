@@ -3,12 +3,21 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{makeidx}
 \usepackage[hidelinks]{hyperref}
+\usepackage{sectsty}
+\partfont{\color{Red}}
+\chapterfont{\color{OliveGreen}}
+\sectionfont{\color{blue}}
+\subsectionfont{\color{Orange}}
+\subsubsectionfont{\color{Cyan}}
+
+
+
 \makeindex
 \bibliography{MyCitations}
-\title{MACHINE LEARNING\\Pre-processing, MODELING and INFERENCE}
+\title{MACHINE LEARNING}
 \author{Salman Aslam}
 \date{}
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 
 \begin{document}
 \maketitle
@@ -26,110 +35,274 @@ dd
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Introduction}
+\chapter{Overview}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Roadmap}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Concepts}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Loss functions}
-\section{VC Dimension}
-\section{Bayes' Rule}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Mathematical Background}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Probability}
+\subsection{Random Numbers}
+\subsection{Distributions}
+\section{Optimization}
+\subsection{Least Squares}
+\subsection{$\min x, |x|=1$}
+\section{Machine LEARNING}
+\subsection{Loss functions}
+\subsection{Risk}
+\subsection{Risk Minimization}
+\subsection{Bayes' Theorem}
+\subsection{Kernel Functions}
+\subsection{VC Dimension}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{General Purpose Algorithms}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Probability}
+\subsection{Sampling Algorithms}
+\section{Optimization}
+\section{Machine LEARNING}
+\subsection{Expectation Maximization Algorithm}
 
 
 
-
-
-
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{\color{red}PRE-PROCESSING}
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Dimensionality Reduction}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{PCA}
-
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{\color{red}MODELING, CLASSIFICATION and REGRESSION}
+\part{KNOWN Class Conditional Density}
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Unsupervised, Non-probabilistic Methods}
+\chapter{\underline{Discriminative Methods}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
 
 %#####
-\section{K-means Clustering}
+\section{Parametric Methods}
 %#####
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Unsupervised Probabilistic Methods}
+\chapter{\underline{Generative Methods}: Bayes' Theorem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%#####
+\section{Parametric Methods}
+%#####
+
+%========
+\subsection{Maximum Likelihood}
+%========
+
+%========
+\subsection{Bayesian Methods}
+%========
 
 
-%=========
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{UNKNOWN Class Conditional Density:\\PROBABILISTIC Unsupervised Learning}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Discriminative Methods}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%#####
+\section{Parametric Methods}
+%#####
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Generative Methods}: Density Estimation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%========
+\subsection{Parzen Window}
+%========
+
+%#####
+\section{Parametric Methods}
+%#####
+
+%========
 \subsection{Mixture of Gaussians}
-%=========
+%========
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Non-probabilistic and Supervised}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%#####
-\section{Linear Basis Functions: Linear Combinations}
-%#####
-
-%#####
-\section{Linear Basis Functions: Non-Linear Combinations}
-%#####
-
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{UNKNOWN Class Conditional Density:
+\\PROBABILISTIC Supervised Learning}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Non-Linear Basis Functions: Linear Combinations}
+\chapter{\underline{Discriminative Methods}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
 
 %#####
-\subsection{Fixed Type, Fixed Number} 
+\section{Parametric Methods}
 %#####
-\subsubsection{Polynomial}
-\subsubsection{Spline}
-\subsubsection{Sigmoidal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Generative Methods}: Density Estimation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
 
 %#####
-\subsection{Fixed Type, Variable Number}
+\section{Parametric Methods}
 %#####
-\subsubsection{Kernel Methods}
+%========
+\subsection{Gaussian Processes}
+%========
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{UNKNOWN Class Conditional Density:\\NON-PROBABILISTIC Unsupervised Learning}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Discriminative Methods}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
 
 %#####
-\section{Non-Linear Basis Functions: Non-Linear Combinations}
+\section{Parametric Methods}
 %#####
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Generative Methods}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%#####
+\section{Parametric Methods}
+%#####
+
+%========
+\subsection{Clustering}
+%========
+
+%========
+\subsection{Dimensionality Reduction}
+%========
+
+
+%========
+\subsection{Relationship Between Clustering and Dimensionality Reduction}
+%========
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\part{UNKNOWN Class Conditional Density:
+\\NON-PROBABILISTIC Supervised Learning}
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Discriminative Methods}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%#####
+\section{Parametric Methods}
+%#####
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Generative Methods}: Basis Functions (Linear)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%#####
+\section{Parametric Methods}
+%#####
+
+%========
+\subsection{Fixed Type, Fixed Number}
+%========
+
+%========
+\subsection{Fixed Type, Variable Number} 
+%========
+
+%========
 \subsection{Variable Type, Fixed Number} 
-%#####
-\subsubsection{Neural Networks}
+%========
 
+%========
+\subsection{Variable Type, Variable Number} 
+%========
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\underline{Generative Methods}: Basis Functions (Non-Linear)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%#####
+\section{Non-Parametric Methods}
+%#####
+
+%#####
+\section{Parametric Methods}
+%#####
+
+%========
+\subsection{Fixed Type, Fixed Number (Polynomial/Spline/Sigmoidal)}
+%========
+
+
+%========
+\subsection{Fixed Type, Variable Number (Kernel Methods, SVM)} 
+%========
+
+%========
+\subsection{Variable Type, Fixed Number (Neural Networks)} 
+%========
+
+%========
+\subsection{Variable Type, Variable Number } 
+%========
 We are not interested in linear basis functions.
 The output function depends on non-linear basis functions and their combinations in the following manner:
 
 \begin{enumerate}
-\item {\color{red}\textbf{Linear combination}}
+\item {\textbf{Linear combination}}
 \begin{enumerate}
 \item {\color{OliveGreen}\textbf{Fixed type}}
 \begin{enumerate}
@@ -137,7 +310,7 @@ The output function depends on non-linear basis functions and their combinations
 \item {\color{blue}\textbf{Variable number, depends on data}}: SVM (Ch 6, 7)
 \end{enumerate}
 \end{enumerate}
-\item {\color{red}\textbf{Non-linear combination}}
+\item {\textbf{Non-linear combination}}
 \begin{enumerate}
 \item {\color{OliveGreen}\textbf{Variable type}}
 \begin{enumerate}
@@ -151,21 +324,6 @@ The output function depends on non-linear basis functions and their combinations
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Probabilistic\index{Probabilistic} and Supervised}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%========
-\subsection{Gaussian Processes}
-%========
-
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-\part{\color{red}WRAP-UP}
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 \cite{GaussProc_SimpleIntro}
 \cite{BOOK_GMPL}
 
